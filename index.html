@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trenes Argentinos - Mitre</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Trenes Argentinos - Mitre</a>
+      <nav class="main-nav">
+        <a href="index.html">Ramales</a>
+        <a href="estado.html">Estado</a>
+        <a href="consulta.html">Consulta de Viajes</a>
+        <a href="terminal.html">Servicio de Terminal</a>
+        <a href="mapa.html">Mapa de Centro de Transporte</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <span class="eyebrow">Línea Mitre: Conectando el Norte</span>
+        <h1>Servicio público esencial para miles de pasajeros cada día</h1>
+        <p>Información actualizada de ramales, horarios y estado del servicio en tiempo real.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="estado.html">Ver estado del servicio</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="status-overview">
+      <div class="container section-header">
+        <div>
+          <p class="section-label">Estado del Servicio</p>
+          <p class="section-subtitle">Actualizado hace 2 minutos</p>
+        </div>
+        <span class="status-pill status-pill--good">Red Operativa</span>
+      </div>
+
+      <div class="container cards-grid">
+        <article class="status-card">
+          <div class="status-card__header">
+            <span class="status-icon">🚆</span>
+            <span class="status-label">NORMAL</span>
+          </div>
+          <h2>Ramal Tigre</h2>
+          <p class="status-route">Retiro - Tigre</p>
+          <p class="status-card__info">Servicio Normal</p>
+          <a class="status-card__btn" href="https://lucasragnae.github.io/trenmitre/index.html" target="_blank" rel="noopener">Explorar Ramal Tigre →</a>
+        </article>
+
+        <article class="status-card">
+          <div class="status-card__header">
+            <span class="status-icon">🚆</span>
+            <span class="status-label">NORMAL</span>
+          </div>
+          <h2>Ramal Suárez</h2>
+          <p class="status-route">Retiro - J. L. Suárez</p>
+          <p class="status-card__info">Servicio Normal</p>
+          <a class="status-card__btn" href="https://nico2k1.github.io/Actividad2_dise-o/" target="_blank" rel="noopener">Explorar Ramal Suárez →</a>
+        </article>
+
+        <article class="status-card">
+          <div class="status-card__header">
+            <span class="status-icon">🚆</span>
+            <span class="status-label">NORMAL</span>
+          </div>
+          <h2>Ramal Mitre</h2>
+          <p class="status-route">Retiro - B. Mitre</p>
+          <p class="status-card__info">Servicio Normal</p>
+          <a class="status-card__btn" href="https://bautistachavarri.github.io/Proyecto-mitre/" target="_blank" rel="noopener">Explorar Ramal Mitre →</a>
+        </article>
+
+        <article class="status-card">
+          <div class="status-card__header">
+            <span class="status-icon">🚆</span>
+            <span class="status-label">NORMAL</span>
+          </div>
+          <h2>Ramal V. Ballester - Zárate</h2>
+          <p class="status-route">V. Ballester - Zárate</p>
+          <p class="status-card__info">Servicio Normal</p>
+          <a class="status-card__btn" href="https://mmatiramoss.github.io/tren-villa-ballester/" target="_blank" rel="noopener">Explorar Ramal Zárate →</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="quick-links">
+      <div class="container quick-grid">
+        <a class="quick-card" href="estado.html">
+          <div class="quick-card__icon">⏱</div>
+          <div>
+            <h3>Próximos Trenes</h3>
+            <p>Consulta en tiempo real</p>
+          </div>
+        </a>
+
+        <a class="quick-card" href="consulta.html">
+          <div class="quick-card__icon">🔍</div>
+          <div>
+            <h3>Consulta de Viajes</h3>
+            <p>Planificá tu recorrido</p>
+          </div>
+        </a>
+
+        <a class="quick-card" href="mapa.html">
+          <div class="quick-card__icon">🗺️</div>
+          <div>
+            <h3>Mapa del Centro de Transporte</h3>
+            <p>Recorridos y estaciones</p>
+          </div>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Chatbot Widget -->
+  <button id="chatbot-btn" class="chatbot-btn" aria-label="Abrir asistencia">💬 Ayuda</button>
+  <div id="chatbot-modal" class="chatbot-modal" aria-hidden="true">
+    <div class="chatbot-backdrop" id="chatbot-backdrop"></div>
+    <div class="chatbot-panel" role="dialog" aria-labelledby="chatbot-title" aria-modal="true">
+      <header class="chatbot-header">
+        <h3 id="chatbot-title">Asistente Virtual</h3>
+        <button id="chatbot-close" class="chatbot-close" aria-label="Cerrar asistente">✕</button>
+      </header>
+      <div class="chatbot-body">
+        <p><strong>¿En qué te podemos ayudar?</strong></p>
+        <p>Realiza preguntas sobre:</p>
+        <ul>
+          <li>Ubicación de servicios</li>
+          <li>Horarios de atención</li>
+          <li>Accesibilidad e instalaciones</li>
+          <li>Contacto y asistencia</li>
+        </ul>
+        <p class="chatbot-contact"><strong>Línea de atención:</strong> 0800-222-8736</p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <p class="footer-title">Trenes Argentinos - Mitre</p>
+        <p>Trabajamos para conectar a los argentinos con un transporte público seguro, eficiente y de calidad.</p>
+      </div>
+      <div>
+        <h4>Institucional</h4>
+        <a href="#">Contacto</a>
+        <a href="#">App Mi Tren</a>
+        <a href="#">Prensa</a>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <a href="#">Términos y Condiciones</a>
+        <a href="#">Privacidad</a>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <p>Centro de atención al pasajero: 0800-222-8736</p>
+      </div>
+    </div>
+    <div class="footer-copy">© 2026 Trenes Argentinos - Ministerio de Transporte</div>
+  </footer>
+
+  <script>
+    (function() {
+      const chatbotBtn = document.getElementById('chatbot-btn');
+      const chatbotModal = document.getElementById('chatbot-modal');
+      const chatbotBackdrop = document.getElementById('chatbot-backdrop');
+      const chatbotClose = document.getElementById('chatbot-close');
+      function openChatbot() { chatbotModal.setAttribute('aria-hidden', 'false'); }
+      function closeChatbot() { chatbotModal.setAttribute('aria-hidden', 'true'); }
+      if (chatbotBtn) chatbotBtn.addEventListener('click', openChatbot);
+      if (chatbotClose) chatbotClose.addEventListener('click', closeChatbot);
+      if (chatbotBackdrop) chatbotBackdrop.addEventListener('click', closeChatbot);
+    })();
+  </script>
+</body>
+</html>

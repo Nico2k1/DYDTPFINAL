@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consulta de Viajes - Trenes Argentinos Mitre</title>
+  <link rel="stylesheet" href="consulta.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Trenes Argentinos - Mitre</a>
+      <nav class="main-nav">
+        <a href="index.html">Ramales</a>
+        <a href="estado.html">Estado</a>
+        <a href="consulta.html">Consulta de Viajes</a>
+        <a href="terminal.html">Servicio de Terminal</a>
+        <a href="mapa.html">Mapa de Centro de Transporte</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="consulta-hero">
+      <div class="container hero-card">
+        <h1>Planificá tu Viaje</h1>
+        <p>Consultá horarios, andenes y tarifas actualizadas de la Línea Mitre en tiempo real.</p>
+      </div>
+    </section>
+
+    <section class="consulta-panel container">
+      <div class="search-card">
+        <div class="field-row">
+          <label>
+            Origen
+            <input id="input-origen" type="text" value="Retiro" placeholder="Ej: Retiro">
+          </label>
+          <button class="swap-btn" type="button">⇄</button>
+          <label>
+            Destino
+            <input id="input-destino" type="text" value="Tigre" placeholder="Ej: Tigre">
+          </label>
+          <button class="btn-primary search-btn" type="button">Buscar</button>
+        </div>
+      </div>
+
+      <div class="status-banner">
+        <div class="status-indicator">✓</div>
+        <div>
+          <p class="status-title">Servicio Normal</p>
+          <p class="status-text">Todos los ramales de la Línea Mitre circulan según cronograma habitual.</p>
+        </div>
+      </div>
+
+      <div class="results-grid">
+        <section class="results-main">
+          <div class="result-card">
+            <div class="result-header">
+              <div>
+                <span class="tag">Línea Mitre</span>
+                <p class="next-departure">Próxima salida: <strong>14:15 hs</strong></p>
+              </div>
+              <div class="price-card">
+                <span class="price-label">Más rápido</span>
+                <strong>$520.00</strong>
+              </div>
+            </div>
+            <div class="trip-step">
+              <span class="step-icon step-icon--depart"></span>
+              <div>
+                <p class="step-title">Estación Retiro</p>
+                <p class="step-subtitle">Sale a las 14:15 hs</p>
+              </div>
+              <span class="platform-chip">Andén 1</span>
+            </div>
+            <div class="trip-step">
+              <span class="step-icon step-icon--arrive"></span>
+              <div>
+                <p class="step-title">Estación Tigre</p>
+                <p class="step-subtitle">Llega a las 15:00 hs</p>
+              </div>
+            </div>
+            <div class="result-footer">
+              <span>Duración: 45 min</span>
+              <span>17 Paradas</span>
+
+            </div>
+          </div>
+
+          <div class="result-card">
+            <div class="result-header">
+              <div>
+                <span class="tag">Línea Mitre</span>
+                <p class="next-departure">Próxima salida: <strong>14:20 hs</strong></p>
+              </div>
+              <div class="price-card">
+                <span class="price-label">Económico</span>
+                <strong>$190.00</strong>
+              </div>
+            </div>
+            <div class="trip-step">
+              <span class="step-icon step-icon--depart"></span>
+              <div>
+                <p class="step-title">Estación Villa Ballester</p>
+                <p class="step-subtitle">Sale a las 14:20 hs</p>
+              </div>
+              <span class="platform-chip">Andén 3</span>
+            </div>
+            <div class="trip-step">
+              <span class="step-icon step-icon--arrive"></span>
+              <div>
+                <p class="step-title">Estación Zárate</p>
+                <p class="step-subtitle">Llega a las 15:50 hs</p>
+              </div>
+            </div>
+            <div class="result-footer">
+              <span>Duración: 90 min</span>
+              <span>22 Paradas</span>
+
+            </div>
+          </div>
+
+          <div class="result-card">
+            <div class="result-header">
+              <div>
+                <span class="tag">Línea Mitre</span>
+                <p class="next-departure">Próxima salida: <strong>14:30 hs</strong></p>
+              </div>
+              <div class="price-card">
+                <span class="price-label">Directo</span>
+                <strong>$380.00</strong>
+              </div>
+            </div>
+            <div class="trip-step">
+              <span class="step-icon step-icon--depart"></span>
+              <div>
+                <p class="step-title">Estación Retiro</p>
+                <p class="step-subtitle">Sale a las 14:30 hs</p>
+              </div>
+              <span class="platform-chip">Andén 2</span>
+            </div>
+            <div class="trip-step">
+              <span class="step-icon step-icon--arrive"></span>
+              <div>
+                <p class="step-title">Estación José León Suárez</p>
+                <p class="step-subtitle">Llega a las 14:58 hs</p>
+              </div>
+            </div>
+            <div class="result-footer">
+              <span>Duración: 28 min</span>
+              <span>9 Paradas</span>
+
+            </div>
+          </div>
+
+          <div class="result-card">
+            <div class="result-header">
+              <div>
+                <span class="tag">Línea Mitre</span>
+                <p class="next-departure">Próxima salida: <strong>14:45 hs</strong></p>
+              </div>
+              <div class="price-card">
+                <span class="price-label">Expreso</span>
+                <strong>$320.00</strong>
+              </div>
+            </div>
+            <div class="trip-step">
+              <span class="step-icon step-icon--depart"></span>
+              <div>
+                <p class="step-title">Estación Retiro</p>
+                <p class="step-subtitle">Sale a las 14:45 hs</p>
+              </div>
+              <span class="platform-chip">Andén 4</span>
+            </div>
+            <div class="trip-step">
+              <span class="step-icon step-icon--arrive"></span>
+              <div>
+                <p class="step-title">Estación Mitre</p>
+                <p class="step-subtitle">Llega a las 15:10 hs</p>
+              </div>
+            </div>
+            <div class="result-footer">
+              <span>Duración: 25 min</span>
+              <span>7 Paradas</span>
+
+            </div>
+          </div>
+
+          <p id="sin-resultados" style="display:none; color:var(--muted); padding: 24px 0;">No se encontraron servicios para ese recorrido.</p>
+
+          <div class="alternative-card">
+            <p class="alt-label">Otras opciones</p>
+            <div class="alt-item">
+              <div>
+                <strong>Colectivo Línea 60</strong>
+                <p>85 min · Económico</p>
+              </div>
+              <strong>$750.00</strong>
+            </div>
+            <div class="alt-item">
+              <div>
+                <strong>Colectivo Línea 57</strong>
+                <p>95 min · Económico</p>
+              </div>
+              <strong>$750.00</strong>
+            </div>
+            <div class="alt-item">
+              <div>
+                <strong>Colectivo Línea 71</strong>
+                <p>70 min · Rápido</p>
+              </div>
+              <strong>$680.00</strong>
+            </div>
+          </div>
+        </section>
+
+        <aside class="results-side">
+<div class="info-card">
+            <div class="info-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0f4c81" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="5" width="20" height="14" rx="2"/>
+                <line x1="2" y1="10" x2="22" y2="10"/>
+              </svg>
+            </div>
+            <h3>Llevá siempre tu SUBE</h3>
+            <p>Recordá registrar tu tarjeta para acceder a la Tarifa Social y recuperar tu saldo en caso de pérdida.</p>
+            <a class="btn-primary" href="https://tarjetasube.sube.gob.ar/subeweb/webforms/account/views/clave-sube-registro.aspx" target="_blank">Registrar Tarjeta</a>
+          </div>
+
+          <div class="times-card">
+            <div class="times-title">Próximos servicios desde Retiro</div>
+            <ul class="times-list">
+              <li><span>14:15</span><span>Retiro → Tigre</span><span>Andén 1</span></li>
+              <li><span>14:20</span><span>Retiro → Zárate</span><span>Andén 3</span></li>
+              <li><span>14:30</span><span>Retiro → Tigre</span><span>Andén 2</span></li>
+              <li><span>14:30</span><span>Retiro → José León Suárez</span><span>Andén 2</span></li>
+              <li><span>14:45</span><span>Retiro → Mitre</span><span>Andén 4</span></li>
+              <li><span>15:00</span><span>Retiro → Tigre</span><span>Andén 2</span></li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <!-- Chatbot Widget -->
+  <button id="chatbot-btn" class="chatbot-btn" aria-label="Abrir asistencia">💬 Ayuda</button>
+  <div id="chatbot-modal" class="chatbot-modal" aria-hidden="true">
+    <div class="chatbot-backdrop" id="chatbot-backdrop"></div>
+    <div class="chatbot-panel" role="dialog" aria-labelledby="chatbot-title" aria-modal="true">
+      <header class="chatbot-header">
+        <h3 id="chatbot-title">Asistente Virtual</h3>
+        <button id="chatbot-close" class="chatbot-close" aria-label="Cerrar asistente">✕</button>
+      </header>
+      <div class="chatbot-body">
+        <p><strong>¿En qué te podemos ayudar?</strong></p>
+        <p>Realiza preguntas sobre:</p>
+        <ul>
+          <li>Ubicación de servicios</li>
+          <li>Horarios de atención</li>
+          <li>Accesibilidad e instalaciones</li>
+          <li>Contacto y asistencia</li>
+        </ul>
+        <p class="chatbot-contact"><strong>Línea de atención:</strong> 0800-222-8736</p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <p class="footer-title">Trenes Argentinos - Mitre</p>
+        <p>Trabajamos para conectar a los argentinos con un transporte público seguro, eficiente y de calidad.</p>
+      </div>
+      <div>
+        <h4>Institucional</h4>
+        <a href="#">Contacto</a>
+        <a href="#">App Mi Tren</a>
+        <a href="#">Prensa</a>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <a href="#">Términos y Condiciones</a>
+        <a href="#">Privacidad</a>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <p>Centro de atención al pasajero: 0800-222-8736</p>
+      </div>
+    </div>
+    <div class="footer-copy">© 2026 Trenes Argentinos - Ministerio de Transporte</div>
+  </footer>
+
+<script>
+  const inputOrigen  = document.getElementById('input-origen');
+  const inputDestino = document.getElementById('input-destino');
+  const swapBtn      = document.querySelector('.swap-btn');
+  const buscarBtn    = document.querySelector('.search-btn');
+  const cards        = document.querySelectorAll('.result-card');
+  const sinResultados = document.getElementById('sin-resultados');
+
+  swapBtn.addEventListener('click', () => {
+    const temp = inputOrigen.value;
+    inputOrigen.value  = inputDestino.value;
+    inputDestino.value = temp;
+  });
+
+  buscarBtn.addEventListener('click', buscar);
+  inputOrigen.addEventListener('keydown',  e => { if (e.key === 'Enter') buscar(); });
+  inputDestino.addEventListener('keydown', e => { if (e.key === 'Enter') buscar(); });
+
+  function normalizar(str) {
+    return str.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').trim();
+  }
+
+  function buscar() {
+    const origen  = normalizar(inputOrigen.value);
+    const destino = normalizar(inputDestino.value);
+    let hayResultados = false;
+
+    cards.forEach(card => {
+      const pasos = card.querySelectorAll('.step-title');
+      if (pasos.length < 2) return;
+      const cardOrigen  = normalizar(pasos[0].textContent.replace('Estación', ''));
+      const cardDestino = normalizar(pasos[1].textContent.replace('Estación', ''));
+
+      const coincide = (!origen  || cardOrigen.includes(origen))  &&
+                       (!destino || cardDestino.includes(destino));
+
+      card.style.display = coincide ? '' : 'none';
+      if (coincide) hayResultados = true;
+    });
+
+    if (sinResultados) {
+      sinResultados.style.display = hayResultados ? 'none' : 'block';
+    }
+  }
+</script>
+
+<script>
+  (function() {
+    const chatbotBtn = document.getElementById('chatbot-btn');
+    const chatbotModal = document.getElementById('chatbot-modal');
+    const chatbotBackdrop = document.getElementById('chatbot-backdrop');
+    const chatbotClose = document.getElementById('chatbot-close');
+    function openChatbot() { chatbotModal.setAttribute('aria-hidden', 'false'); }
+    function closeChatbot() { chatbotModal.setAttribute('aria-hidden', 'true'); }
+    if (chatbotBtn) chatbotBtn.addEventListener('click', openChatbot);
+    if (chatbotClose) chatbotClose.addEventListener('click', closeChatbot);
+    if (chatbotBackdrop) chatbotBackdrop.addEventListener('click', closeChatbot);
+  })();
+</script>
+</body>
+</html>
