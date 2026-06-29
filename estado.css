@@ -45,7 +45,6 @@ button {
   margin: 0 auto;
 }
 
-/* ── Header / Nav ──────────────────────────────────────────────── */
 
 .site-header {
   position: sticky;
@@ -88,7 +87,6 @@ button {
   color: #f5a623;
 }
 
-/* ── Hero ───────────────────────────────────────────────────────── */
 
 .status-hero {
   background: linear-gradient(135deg, #0a3a62 0%, #0f4c81 60%, #1a6aa8 100%);
@@ -180,7 +178,6 @@ button {
   opacity: 0.6;
 }
 
-/* ── Section title ───────────────────────────────────────────────── */
 
 .section-title {
   margin: 0 0 24px;
@@ -189,7 +186,6 @@ button {
   color: var(--text);
 }
 
-/* ── Ramales Grid ───────────────────────────────────────────────── */
 
 .ramales-section {
   padding: 56px 0 40px;
@@ -249,7 +245,6 @@ button {
   line-height: 1.5;
 }
 
-/* ── Badges ──────────────────────────────────────────────────────── */
 
 .badge {
   display: inline-block;
@@ -264,7 +259,6 @@ button {
 .badge--warn { background: #fef3c7; color: #92400e; }
 .badge--bad  { background: #fee2e2; color: #991b1b; }
 
-/* ── Próximas Partidas ───────────────────────────────────────────── */
 
 .departures-section {
   padding: 0 0 56px;
@@ -377,7 +371,6 @@ button {
   border-radius: 0 0 12px 12px;
 }
 
-/* ── Alertas ─────────────────────────────────────────────────────── */
 
 .alerts-section { padding: 0 0 64px; }
 
@@ -423,7 +416,6 @@ button {
   opacity: 0.8;
 }
 
-/* ── Footer ──────────────────────────────────────────────────────── */
 
 .site-footer {
   background: #0f4c81;
@@ -472,7 +464,6 @@ button {
   padding-top: 20px;
 }
 
-/* ── Chatbot Widget ──────────────────────────────────────────────── */
 
 .chatbot-btn {
   position: fixed;
@@ -553,7 +544,6 @@ button {
 }
 .chatbot-close:hover { color: var(--text); }
 
-/* ── Responsive ──────────────────────────────────────────────────── */
 
 @media (max-width: 768px) {
   .header-inner {
